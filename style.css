@@ -1,0 +1,237 @@
+/* 3-----------------------------
+    <<Basic info>>
+
+Author: Jacob Erholt
+Created: 22/4/2020
+Last Modified: 27/4/2020
+Last Sorted: na/na/na
+Author links:
+    Facebook: https://www.facebook.com/profile.php?id=100009581239174
+    Youtube: https://www.youtube.com/channel/UCFmKt6u9UHF-oQO0mfpj_Tw/featured
+    LinkedIn: http://linkedin.com/in/jacob-erholt-b33b74193
+    Mail: jacob@erholt.dk
+
+Breakeven – The Script ' 7 <br> =="4, 5, 6"
+1:11 ━━━━❍─────── 4:16
+↻     ⊲  Ⅱ  ⊳      ↺
+VOLUME: ▁▂▃▄▅▆▇  100%
+
+////////////////////////////////
+/////// Website CSS /////// 
+////////////////////////////////
+--------------------------------
+----------------------------- */
+
+    
+/* Reset */
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+img, video, iframe{
+    max-width: 100%;
+}
+/* Other Settings */
+body{
+    background-image: url(/assets/597986-texture-colorful-LEGO-748x499.jpg);
+}
+main{
+    color: white;
+    font-size: 20px;
+}
+header{
+    height: 250px;
+    background-image: url(/assets/main.jpg);
+    color: whitesmoke;
+    font-size: 20px;
+    text-shadow: black 4px 4px;
+    text-align: center;
+}
+/* Classes */
+.max-width-center{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.max-width{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.padding{
+    padding: 1rem;
+}
+.background{
+        background-color: rgba(44, 41, 41, 0.911);
+}
+/* Menu */
+.menu-items{
+    display:none;
+}
+#check:checked +.menu-items{
+    display:block;
+}
+#check{
+    display:none;
+}
+.menu-items a{
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 0;
+}
+.menu-items ul{
+    list-style: none;
+    padding: 0;
+}
+.has-dropdown ul{
+    display:none;
+}
+.has-dropdown ul.visible{
+    display:block;
+}
+.videodesk{
+    display: none;
+}
+.videotel{
+    display: block;
+}
+.center{
+    text-align: center;
+}
+/* Desktop Settings */
+@media only screen and (min-width: 720px){
+    header{
+        font-size: 20px;
+    }
+    .flex-container{
+        display: flex;
+    }
+    .col-50{
+        width: 49%;
+    }
+    .col-33{
+        width: 33.333%;
+    }
+    .col-66{
+        width: 66.666%
+    }
+    .video{
+        max-width: 50%;
+        height: 15%;
+    }
+    .bild{
+        max-width: 32%;
+    }
+    .bild5{
+        max-width: 48.3%;
+    }
+    .bild6{
+        max-width: 70%;
+    }
+    .bild4{
+        max-width: 26.4%;
+    }
+    .bild2{
+        max-width: 49%;
+    }
+    .videodesk{
+        display: block;
+        text-align: center;
+    }
+    .videotel{
+        display: none;
+        text-align: center;
+    }
+    .max-width{
+        width: 100%;
+    }
+    /* Lightbox styles */
+    .lb-container{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s;
+    }
+    .lb-container-active{
+        opacity: 1;
+        pointer-events: all;
+    }   
+    .lb-image{
+        width: 75vw;
+        height: 75vh;
+        max-width: 1700px;
+        max-height: 1700px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 10px solid rgba(255, 255, 255, 0.8);
+    }   
+    .lb-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: #222;
+        color: #ffffff;
+        padding: 5px 8px;
+    }
+    /*Menu*/
+    .menu-items{
+        display:block;
+    }
+    .check-label{
+        display:none;
+    }
+    .menu-items a{
+        display: inline-block;
+        padding: 0 0;
+    }
+    .menu-level-1{
+        display:flex;
+        justify-content: space-between;
+        position: relative;
+        z-index:3;
+    }
+    .has-dropdown ul{
+        position:absolute;
+        padding:10px;
+        width:100%;
+        left:0;
+        display: none;
+    }
+    .has-dropdown ul.visible{
+        display: none;
+    }
+    .has-dropdown:hover ul,
+    .has-dropdown:hover ul.visible{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .menu-items a {
+        border-bottom: 2px solid transparent;
+    }
+    .menu-items a:hover {
+        border-bottom: 2px solid #fff;
+    }
+}    
+@media only screen and (min-width: 820px){
+    header{
+        font-size: 30px;
+    }
+}    
